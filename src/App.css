@@ -9,7 +9,6 @@
   width: 250px;
   background-color: #f8f8f8;
   border-right: 1px solid #ddd;
-  padding: 20px;
 }
 
 .navbar {
@@ -40,9 +39,6 @@
   padding-left: 20px;
   list-style-type: none;
   display: block;
-}
-.nav-stacked > li > ul > li {
-  margin: 5px 0;
 }
 
 #sideBar {
