@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+.dx-datagrid .dx-row.dx-selection { /* 선택한 행 진한 회색으로 */
+  background-color: #a9a9a9 !important;
+}
+.sidebar {
+  position: fixed;
+  top: 47px;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: #f8f8f8;
+  border-right: 1px solid #ddd;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  border-bottom: 1px solid #ddd;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content {
+  margin-left: 270px;
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin-bottom: 1px;
 }
 
-.App-link {
-  color: #61dafb;
+.form-group {
+  flex: 1;
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-group:last-child {
+  margin-right: 0;
+}
+
+.nav-stacked > li > ul {
+  padding-left: 20px;
+  list-style-type: none;
+  display: block;
+}
+.nav-stacked > li > ul > li {
+  margin: 5px 0;
+}
+
+#sideBar {
+  overflow-y: auto;
+  overflow-x: hidden;
 }
